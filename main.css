@@ -1,0 +1,63 @@
+body {
+  background-image: url(img/background.png);
+}
+
+.enable_music {
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 15px auto;
+  animation: music 3s;
+}
+
+.loadingassets {
+  display: flex;
+  
+}
+
+.bar  {
+  position: absolute;
+  width: 150vh;
+  height: 1vh;
+  background-color: #8b8a8a5e;
+  border-radius: 2vh;
+  margin-top: 90vh;
+  margin-left: 13.5vh;
+}
+
+.loadingbar-loaded {
+  width: 0%;
+  height: 100%;
+  background-color: #f8a432;
+  border-radius: 2vh;
+  box-shadow: 0vh 0vh 1.5vh #f8a432;
+  z-index: 10;
+}
+
+.beat {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  /* font-size: 100px; */
+  animation: beat 2s infinite;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.15);
+  }
+  40% {
+    transform: scale(1.2);
+  }
+}
